@@ -337,8 +337,9 @@ transition:.4s;
 
 transform:translateY(-8px);
 
-}.product-story{
+} 
 
+.product-story{
 background:linear-gradient(
 180deg,
 #fcfaf7 0%,
