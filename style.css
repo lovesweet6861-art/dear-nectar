@@ -308,3 +308,30 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+.product-story {
+  background: #fcfaf7;
+}
+
+.story-gallery {
+  max-width: 720px;
+  margin: 60px auto 0;
+  display: grid;
+  gap: 34px;
+}
+
+.story-gallery img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(90, 72, 66, 0.12);
+}
+
+@media (max-width: 850px) {
+  .story-gallery {
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .story-gallery img {
+    border-radius: 20px;
+  }
+}
