@@ -311,27 +311,38 @@ footer p {
 .product-story {
   background: #fcfaf7;
 }
+.story-single{
 
-.story-gallery {
-  max-width: 720px;
-  margin: 60px auto 0;
-  display: grid;
-  gap: 34px;
+max-width:520px;
+
+margin:70px auto 0;
+
 }
 
-.story-gallery img {
-  width: 100%;
-  border-radius: 28px;
-  box-shadow: 0 24px 60px rgba(90, 72, 66, 0.12);
+.story-single img{
+
+width:100%;
+
+display:block;
+
+border-radius:30px;
+
+box-shadow:0 25px 70px rgba(90,72,66,.15);
+
+transition:.4s;
+
 }
 
-@media (max-width: 850px) {
-  .story-gallery {
-    max-width: 100%;
-    gap: 24px;
-  }
+.story-single img:hover{
 
-  .story-gallery img {
-    border-radius: 20px;
-  }
+transform:translateY(-8px);
+
+}.product-story{
+
+background:linear-gradient(
+180deg,
+#fcfaf7 0%,
+#fffdfb 40%,
+#fdf8f3 100%);
+
 }
