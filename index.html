@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dear Nectar Skincare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo">DEAR NECTAR</a>
+    <nav>
+      <a href="#story">Our Story</a>
+      <a href="#ritual">The Ritual</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Korean skincare ritual</p>
+        <h1>Because Great Skin<br>Should Never Rush.</h1>
+        <p class="hero-text">Gentle barrier care, deep hydration, and a soft healthy glow — made for skin that deserves time.</p>
+        <a class="button" href="#ritual">Discover the Ritual</a>
+      </div>
+
+      <div class="hero-image reveal">
+        <img src="assets/hero.jpg" alt="Dear Nectar skincare products" />
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-image reveal">
+        <img src="assets/ritual.jpg" alt="Dear Nectar product packaging" />
+      </div>
+
+      <div class="section-copy reveal">
+        <p class="eyebrow">Our philosophy</p>
+        <h2>Every skin deserves a little more time.</h2>
+        <p>Dear Nectar transforms daily skincare into a calming ritual. Our formulas are designed to comfort, hydrate, and support the skin barrier with a soft, elegant touch.</p>
+      </div>
+    </section>
+
+    <section class="section centered" id="ritual">
+      <p class="eyebrow reveal">The ritual</p>
+      <h2 class="reveal">Two steps for soft, cared-for skin.</h2>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <img src="assets/product-8pm.jpg" alt="8PM Late Checkout EXO Dew Ampoule" />
+          <div>
+            <p class="time">8PM</p>
+            <h3>Late Checkout</h3>
+            <p class="product-type">EXO Dew Ampoule</p>
+            <p>Hydration, glow, and barrier support for skin that needs a reset.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <img src="assets/product-12am.jpg" alt="12AM Cloud Melt Barrier Soufflé Cream" />
+          <div>
+            <p class="time">12AM</p>
+            <h3>Cloud Melt</h3>
+            <p class="product-type">Barrier Soufflé Cream</p>
+            <p>Cloud-soft comfort that helps lock in moisture and support the barrier.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ingredients section" id="ingredients">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Ingredient story</p>
+        <h2>Gentle care with thoughtful actives.</h2>
+
+        <div class="ingredient-list">
+          <div><strong>Swiss Panthenol</strong><span>Helps hydrate and support the moisture barrier.</span></div>
+          <div><strong>Centella Exosome Complex</strong><span>Comforts stressed-looking skin.</span></div>
+          <div><strong>Liposomal Ceramide</strong><span>Helps seal in moisture for lasting softness.</span></div>
+          <div><strong>Multi Peptide Complex</strong><span>Supports smoother, firmer-looking skin.</span></div>
+        </div>
+      </div>
+
+      <div class="ingredient-images reveal">
+        <img src="assets/ingredients-pink.jpg" alt="Dear Nectar ingredient brochure" />
+        <img src="assets/ingredients-cream.jpg" alt="Dear Nectar ingredient details" />
+      </div>
+    </section>
+
+    <section class="quote reveal">
+      <p>“Because Great Skin Should Never Rush.”</p>
+    </section>
+
+    <section class="contact section centered" id="contact">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="reveal">Connect with Dear Nectar</h2>
+
+      <div class="contact-grid reveal">
+        <div><span>Instagram</span><strong>@dearnectar_official</strong></div>
+        <div><span>Email</span><strong>WenFish@pharmablossomlab.com</strong></div>
+        <div><span>Location</span><strong>Seoul, Korea</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>DEAR NECTAR</p>
+    <span>Because Great Skin Should Never Rush.</span>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
