@@ -319,31 +319,4 @@ margin:70px auto 0;
 
 }
 
-.story-single img{
 
-width:100%;
-
-display:block;
-
-border-radius:30px;
-
-box-shadow:0 25px 70px rgba(90,72,66,.15);
-
-transition:.4s;
-
-}
-
-.story-single img:hover{
-
-transform:translateY(-8px);
-
-} 
-
-.product-story{
-background:linear-gradient(
-180deg,
-#fcfaf7 0%,
-#fffdfb 40%,
-#fdf8f3 100%);
-
-}
