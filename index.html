@@ -1,163 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dear Nectar Skincare</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Dear Nectar creates gentle, hydration-first Korean skincare for daily comfort, healthy-looking glow and skin-barrier support."
+  >
+
+  <title>Dear Nectar | Because Great Skin Should Never Rush</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Announcement bar -->
+  <div class="announcement-bar">
+    <p>
+      PHARMACIST-DEVELOPED KOREAN SKINCARE
+      <span>✦</span>
+      HYDRATION-FIRST BARRIER CARE
+    </p>
+  </div>
+
+  <!-- Header -->
   <header class="site-header">
-    <a href="#home" class="logo">DEAR NECTAR</a>
-    <nav>
-      <a href="#story">Our Story</a>
+    <a class="logo" href="#top" aria-label="Dear Nectar home">
+      DEAR NECTAR
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#products">Shop</a>
       <a href="#ritual">The Ritual</a>
-      <a href="#details">Product Details</a>
-<a href="#ingredients">Ingredients</a>
-      <a href="#contact">Contact</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#story">Our Story</a>
     </nav>
+
+    <div class="header-actions">
+      <a
+        href="https://www.instagram.com/dearnectar_official/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+
+    <details class="mobile-menu">
+      <summary aria-label="Open navigation">Menu</summary>
+
+      <nav aria-label="Mobile navigation">
+        <a href="#products">Shop</a>
+        <a href="#ritual">The Ritual</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#story">Our Story</a>
+
+        <a
+          href="https://www.instagram.com/dearnectar_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </nav>
+    </details>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Korean skincare ritual</p>
-        <h1>Because Great Skin<br>Should Never Rush.</h1>
-        <p class="hero-text">Gentle barrier care, deep hydration, and a soft healthy glow — made for skin that deserves time.</p>
-        <a class="button" href="#ritual">Discover the Ritual</a>
-      </div>
+  <main id="top">
 
-      <div class="hero-image reveal">
-        <img src="assets/hero.jpg" alt="Dear Nectar skincare products" />
+    <!-- Hero -->
+    <section class="hero">
+      <img
+        class="hero-image"
+        src="assets/hero.jpg"
+        alt="Dear Nectar 8PM ampoule and 12AM barrier cream"
+      >
+
+      <div class="hero-content">
+        <p class="eyebrow">A RITUAL IN TWO MOMENTS</p>
+
+        <h1>
+          Skincare should feel
+          <em>like a moment of comfort.</em>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtful hydration and soft barrier care for skin that
+          deserves a little more time.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#products">
+            Discover the ritual
+          </a>
+
+          <a class="text-link" href="#story">
+            Our philosophy
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="story section" id="story">
-      <div class="section-image reveal">
-        <img src="assets/ritual.jpg" alt="Dear Nectar product packaging" />
+    <!-- Moving message -->
+    <div class="ticker" aria-label="Dear Nectar product benefits">
+      <div class="ticker-track">
+        <span>DEEP HYDRATION</span>
+        <span>✦</span>
+        <span>BARRIER SUPPORT</span>
+        <span>✦</span>
+        <span>COMFORTING TEXTURES</span>
+        <span>✦</span>
+        <span>HEALTHY-LOOKING GLOW</span>
+        <span>✦</span>
+        <span>DEEP HYDRATION</span>
+        <span>✦</span>
+        <span>BARRIER SUPPORT</span>
+        <span>✦</span>
+        <span>COMFORTING TEXTURES</span>
+        <span>✦</span>
+        <span>HEALTHY-LOOKING GLOW</span>
+        <span>✦</span>
       </div>
+    </div>
 
-      <div class="section-copy reveal">
-        <p class="eyebrow">Our philosophy</p>
-        <h2>Every skin deserves a little more time.</h2>
-        <p>Dear Nectar transforms daily skincare into a calming ritual. Our formulas are designed to comfort, hydrate, and support the skin barrier with a soft, elegant touch.</p>
+    <!-- Brand introduction -->
+    <section class="brand-intro section">
+      <p class="section-label">THE DEAR NECTAR FEELING</p>
+
+      <h2>
+        From first hydration
+        <em>to final comfort.</em>
+      </h2>
+
+      <p>
+        Dear Nectar turns everyday skincare into a gentle ritual with
+        fresh hydration, comforting moisture and thoughtful support for
+        healthy-looking skin.
+      </p>
+    </section>
+
+    <!-- Products -->
+    <section class="products section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">MEET THE RITUAL</p>
+          <h2>Two moments. One comforting routine.</h2>
+        </div>
+
+        <p>
+          Begin with lightweight hydration at 8PM. Finish with
+          cloud-soft moisture at 12AM.
+        </p>
       </div>
-    </section>  </h2>
-
-    <p class="reveal" style="max-width:850px;margin:30px auto;line-height:2;font-size:18px;color:#7d6a63;">
-        Dear Nectar was developed by a Korean pharmacist who worked alongside
-        dermatologists for many years. Inspired by real clinical experience,
-        our motto is simple: healthy skin begins with a strong, well-hydrated
-        skin barrier.
-    </p>
-
-    <p class="reveal" style="max-width:850px;margin:20px auto;line-height:2;font-size:18px;color:#7d6a63;">
-        Every formula is thoughtfully created to deliver deep, lasting hydration
-        while helping maintain the skin's natural balance. Rather than chasing
-        quick results, Dear Nectar embraces a gentle skincare ritual that
-        nourishes, comforts, and supports healthier-looking skin every day.
-    </p>
-
-    <p class="reveal"style="max-width:850px;margin:20px auto;line-height:2;font-size:18px;">
-        Trusted by Korean pharmacies
-    </p>
-</section>
-
-    <section class="section centered" id="ritual">
-      <p class="eyebrow reveal">The ritual</p>
-      <h2 class="reveal">Two steps for soft, cared-for skin.</h2>
 
       <div class="product-grid">
-        <article class="product-card reveal">
-          <img src="assets/product-8pm.jpg" alt="8PM Late Checkout EXO Dew Ampoule" />
-          <div>
-            <p class="time">8PM</p>
-            <h3>Late Checkout</h3>
-            <p class="product-type">EXO Dew Ampoule</p>
-            <p>Hydration, glow, and barrier support for skin that needs a reset.</p>
+
+        <!-- 8PM -->
+        <article class="product-card product-card-pink">
+          <div class="product-image-wrap">
+            <span class="product-number">01</span>
+
+            <img
+              src="assets/product-8pm.jpg"
+              alt="Dear Nectar 8PM Late Checkout Exo Dew Ampoule"
+            >
+          </div>
+
+          <div class="product-info">
+            <p class="product-time">8PM</p>
+
+            <h3>Late Checkout Exo Dew Ampoule</h3>
+
+            <p class="product-summary">
+              Lightweight, serum-like hydration for comfort, barrier
+              support and a fresh healthy-looking glow.
+            </p>
+
+            <ul class="product-benefits">
+              <li>Deep hydration</li>
+              <li>Barrier support</li>
+              <li>Fast-absorbing, non-sticky finish</li>
+            </ul>
+
+            <a class="product-link" href="#ingredients">
+              Explore 8PM
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
         </article>
 
-        <article class="product-card reveal">
-          <img src="assets/product-12am.jpg" alt="12AM Cloud Melt Barrier Soufflé Cream" />
-          <div>
-            <p class="time">12AM</p>
-            <h3>Cloud Melt</h3>
-            <p class="product-type">Barrier Soufflé Cream</p>
-            <p>Cloud-soft comfort that helps lock in moisture and support the barrier.</p>
+        <!-- 12AM -->
+        <article class="product-card product-card-yellow">
+          <div class="product-image-wrap">
+            <span class="product-number">02</span>
+
+            <img
+              src="assets/product-12am.jpg"
+              alt="Dear Nectar 12AM Cloud Melt Barrier Soufflé Cream"
+            >
+          </div>
+
+          <div class="product-info">
+            <p class="product-time">12AM</p>
+
+            <h3>Cloud Melt Barrier Soufflé Cream</h3>
+
+            <p class="product-summary">
+              Cloud-like moisture that helps nourish, comfort and
+              support the skin without a heavy finish.
+            </p>
+
+            <ul class="product-benefits">
+              <li>Comforting moisture</li>
+              <li>Soft barrier support</li>
+              <li>Fast-absorbing soufflé texture</li>
+            </ul>
+
+            <a class="product-link" href="#ingredients">
+              Explore 12AM
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
         </article>
+
       </div>
     </section>
-<section class="section centered product-story" id="details">
-  <p class="eyebrow reveal">Product Details</p>
-  <h2 class="reveal">12AM Cloud Melt</h2>
-  <p class="hero-text reveal" style="margin:auto">
-    A pharmacist-developed barrier soufflé cream for lasting hydration,
-    comfort, and daily skin barrier care.
-  </p>
 
- 
-</div>
-</div> </section>
+    <!-- Statement -->
+    <section class="statement">
+      <p class="section-label">OUR PHILOSOPHY</p>
+
+      <h2>
+        Because great skin
+        <em>should never rush.</em>
+      </h2>
+
+      <p>
+        Comforting on the skin. Gentle enough for everyday use.
+        Rich in moisture, yet easy to absorb.
+      </p>
+    </section>
+
+    <!-- Ritual -->
+    <section class="ritual section" id="ritual">
+      <div class="ritual-image">
+        <img
+          src="assets/ritual.jpg"
+          alt="Dear Nectar two-step skincare ritual"
+        >
+      </div>
+
+      <div class="ritual-content">
+        <p class="section-label">A RITUAL IN TWO MOMENTS</p>
+
+        <h2>
+          Your evening,
+          <em>softly layered.</em>
+        </h2>
+
+        <div class="ritual-step">
+          <span>01</span>
+
+          <div>
+            <p class="ritual-time">8PM</p>
+            <h3>Hydrate, calm and support.</h3>
+            <p>
+              Apply the Exo Dew Ampoule evenly after cleansing and
+              toning. Gently press it into the skin.
+            </p>
+          </div>
+        </div>
+
+        <div class="ritual-step">
+          <span>02</span>
+
+          <div>
+            <p class="ritual-time">12AM</p>
+            <h3>Nourish and lock in moisture.</h3>
+            <p>
+              Finish with the Barrier Soufflé Cream and allow its
+              cloud-soft texture to absorb.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits section">
+      <div class="benefit-card">
+        <span>01</span>
+        <h3>Lightweight hydration</h3>
+        <p>Fresh moisture that absorbs without a sticky finish.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span>02</span>
+        <h3>Daily barrier support</h3>
+        <p>Thoughtful ingredients for softer, more comfortable skin.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span>03</span>
+        <h3>Healthy-looking glow</h3>
+        <p>Hydration-first care for a smooth and refreshed appearance.</p>
+      </div>
+    </section>
+
+    <!-- Ingredients -->
     <section class="ingredients section" id="ingredients">
-      <div class="section-copy reveal">
-        <p class="eyebrow">Ingredient story</p>
-        <h2>Gentle care with thoughtful actives.</h2>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">INSIDE THE FORMULAS</p>
+          <h2>Thoughtful care in every layer.</h2>
+        </div>
 
-        <div class="ingredient-list">
-          <div><strong>Swiss Panthenol</strong><span>Helps hydrate and support the moisture barrier.</span></div>
-          <div><strong>Centella Exosome Complex</strong><span>Comforts stressed-looking skin.</span></div>
-          <div><strong>Liposomal Ceramide</strong><span>Helps seal in moisture for lasting softness.</span></div>
-          <div><strong>Multi Peptide Complex</strong><span>Supports smoother, firmer-looking skin.</span></div>
+        <p>
+          Ingredients selected to support hydration, comfort and the
+          skin’s moisture barrier.
+        </p>
+      </div>
+
+      <div class="ingredient-feature ingredient-feature-pink">
+        <div class="ingredient-image">
+          <img
+            src="assets/ingredients-pink.jpg"
+            alt="Pink serum texture representing the 8PM ampoule"
+          >
+        </div>
+
+        <div class="ingredient-copy">
+          <p class="ingredient-product">8PM FORMULA</p>
+          <h3>Hydration that feels fresh.</h3>
+
+          <div class="ingredient-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h4>Swiss Panthenol 20,000 ppm</h4>
+                <p>Helps replenish moisture and support skin comfort.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <h4>Centella Exosome Complex</h4>
+                <p>Helps comfort stressed-looking skin.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <h4>Liposomal Ceramide</h4>
+                <p>Helps lock in moisture and support barrier care.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>04</span>
+              <div>
+                <h4>Multi-Peptide Complex</h4>
+                <p>Supports smoother and more elastic-looking skin.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
 
-      <div class="ingredient-images reveal">
-        <img src="assets/ingredients-pink.jpg" alt="Dear Nectar ingredient brochure" />
-        <img src="assets/ingredients-cream.jpg" alt="Dear Nectar ingredient details" />
+      <div class="ingredient-feature ingredient-feature-cream">
+        <div class="ingredient-copy">
+          <p class="ingredient-product">12AM FORMULA</p>
+          <h3>Comfort that melts into skin.</h3>
+
+          <div class="ingredient-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h4>Probiotic Ferment</h4>
+                <p>Helps support a healthy-looking skin environment.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <h4>Organic Jojoba Oil</h4>
+                <p>Helps lock in moisture and leave skin feeling soft.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <h4>Shea Butter</h4>
+                <p>Provides comforting nourishment without heaviness.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>04</span>
+              <div>
+                <h4>Multi-Hyaluronic Acid</h4>
+                <p>Supports lasting hydration throughout the routine.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="ingredient-image">
+          <img
+            src="assets/ingredients-cream.jpg"
+            alt="Cream texture representing the 12AM barrier cream"
+          >
+        </div>
       </div>
     </section>
 
-    <section class="quote reveal">
-      <p>“Because Great Skin Should Never Rush.”</p>
-    </section>
+    <!-- Botanical ingredients -->
+    <section class="botanicals section">
+      <div class="botanical-heading">
+        <p class="section-label">BOTANICAL COMFORT</p>
 
-    <section class="contact section centered" id="contact">
-      <p class="eyebrow reveal">Contact</p>
-      <h2 class="reveal">Connect with Dear Nectar</h2>
+        <h2>
+          Five flowers inspired by
+          <em>traditional skincare wisdom.</em>
+        </h2>
+      </div>
 
-      <div class="contact-grid reveal">
-        <div><span>Instagram</span><strong>@dearnectar_official</strong></div>
-        <div><span>Email</span><strong>WenFish@pharmablossomlab.com</strong></div>
-        <div><span>Location</span><strong>Seoul, Korea</strong></div>
+      <div class="botanical-grid">
+        <article>
+          <span>01</span>
+          <h3>Calendula</h3>
+          <p>Helps soothe and comfort dry-looking skin.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Chamomile</h3>
+          <p>Supports calm, healthy-looking skin.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Elderflower</h3>
+          <p>Helps maintain skin softness and radiance.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Edelweiss</h3>
+          <p>Known for thriving in demanding environments.</p>
+        </article>
+
+        <article>
+          <span>05</span>
+          <h3>Mimosa</h3>
+          <p>Supports a smoother and refreshed appearance.</p>
+        </article>
       </div>
     </section>
+
+    <!-- Brand story -->
+    <section class="story section" id="story">
+      <div class="story-heading">
+        <p class="section-label">A GENTLE BEGINNING</p>
+
+        <h2>
+          Developed from experience.
+          <em>Created for everyday comfort.</em>
+        </h2>
+      </div>
+
+      <div class="story-columns">
+        <div>
+          <p>
+            Dear Nectar was developed by a Korean pharmacist who worked
+            alongside dermatologists for many years.
+          </p>
+
+          <p>
+            Inspired by real clinical experience, the brand began with
+            one simple belief: healthy-looking skin starts with a strong,
+            well-hydrated moisture barrier.
+          </p>
+        </div>
+
+        <div>
+          <p>
+            Every formula is thoughtfully created to deliver lasting
+            hydration while helping maintain the skin’s natural balance.
+          </p>
+
+          <p>
+            Rather than chasing quick results, Dear Nectar embraces a
+            gentle ritual that nourishes, comforts and supports skin
+            every day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram-section section">
+      <p class="section-label">FOLLOW THE RITUAL</p>
+
+      <h2>@dearnectar_official</h2>
+
+      <p>
+        Discover product stories, skincare notes and the latest moments
+        from Dear Nectar.
+      </p>
+
+      <a
+        class="button button-dark"
+        href="https://www.instagram.com/dearnectar_official/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit Instagram
+      </a>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div>
+        <p class="section-label">A LITTLE NECTAR FOR YOUR INBOX</p>
+        <h2>Stay close to the ritual.</h2>
+      </div>
+
+      <form
+        class="newsletter-form"
+        action="mailto:WenFish@pharmabiossomlab.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label class="sr-only" for="email">Email address</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email address"
+          required
+        >
+
+        <button type="submit">Join us</button>
+      </form>
+    </section>
+
   </main>
 
-  <footer>
-    <p>DEAR NECTAR</p>
-    <span>Because Great Skin Should Never Rush.</span>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="footer-logo" href="#top">DEAR NECTAR</a>
+
+      <p>Because Great Skin Should Never Rush.</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>Discover</h3>
+        <a href="#products">Products</a>
+        <a href="#ritual">The Ritual</a>
+        <a href="#ingredients">Ingredients</a>
+      </div>
+
+      <div>
+        <h3>About</h3>
+        <a href="#story">Our Story</a>
+
+        <a
+          href="https://www.instagram.com/dearnectar_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+
+        <a href="mailto:WenFish@pharmabiossomlab.com">
+          WenFish@pharmabiossomlab.com
+        </a>
+
+        <a href="tel:+827080962510">
+          +82-70-8096-2510
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Dear Nectar. All rights reserved.</p>
+
+      <p>Seoul, Korea</p>
+    </div>
   </footer>
 
-  <script>
-    const items = document.querySelectorAll('.reveal');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15 });
-
-    items.forEach(item => observer.observe(item));
-  </script>
 </body>
 </html>
